@@ -479,8 +479,8 @@
 	NSString * note = nil;
 	[lineScanner scanUpToString:@" " intoString:&bytes];
 	[lineScanner scanUpToString:@" " intoString:&op];
-	[lineScanner scanUpToString:@" " intoString:&data];
-	[lineScanner scanUpToString:@"  " intoString:&note];
+	[lineScanner scanUpToString:@"  " intoString:&data];
+	[lineScanner scanUpToString:@"\n" intoString:&note];
 	
 	if (!data) data=@"";
 	if (!note) note = @"";
