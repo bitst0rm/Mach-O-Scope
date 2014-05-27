@@ -249,7 +249,7 @@ static NSColor *_static_greenHighlight = 0;
 
 
 -(NSString *)progressLabel{
-	return [NSString stringWithFormat:@"Processing line %ld of %ld",(long)self.progressAmount,self.progressTotal];
+	return [NSString stringWithFormat:@"Processing line %ld of %ld",(long)self.progressAmount,(long)self.progressTotal];
 }
 
 -(void)updateProgressIndicatorWithCount:(NSDictionary*)status{
